@@ -17,7 +17,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--window-size=1920x1080")
 
 # 替换为你的ChromeDriver路径 (下载地址 https://chromedriver.storage.googleapis.com/index.html，下载本机chrome对应的版本)
-chromedriver_path = '/Users/sysant/PycharmProjects/API/chromedriver'
+chromedriver_path = '/Users/sysant/chromedriver'
 service = Service(chromedriver_path)
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
@@ -159,9 +159,9 @@ def save_main_page(url, savefile):
 
 if __name__ == '__main__':
     page_urls_file = 'PageUrls.txt'
-    url = 'https://blog.51cto.com/dyc2005'
-    pages_pattern = re.compile(r'https://blog\.51cto\.com/dyc2005/p_\d+')
-    article_pattern = re.compile(r'https://blog\.51cto\.com/dyc2005/\d+')
+    url = 'https://blog.51cto.com/xxxxx'
+    pages_pattern = re.compile(r'https://blog\.51cto\.com/xxxxx/p_\d+')
+    article_pattern = re.compile(r'https://blog\.51cto\.com/xxxxx/\d+')
     # 保存主页的HTML内容
     save_main_page(url, 'main.html')
     # 获取所有分页的URL列表(含首页)
