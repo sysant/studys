@@ -1,0 +1,6 @@
+# zabbix 所有版本
+1.将simkai.ttf 放到 zabbix程序所在目录fonts目录下(默认：/usr/share/zabbix/assets/fonts）
+如果不知道在哪个目录可以find 查找
+2. 修改/usr/share/zabbix/include/defines.inc.php （zabbix6.x 7.x）
+将define('ZBX_GRAPH_FONT_NAME',         'graphfont') --> 修改为 define('ZBX_GRAPH_FONT_NAME',         'simkai')
+其他版本类似，可能默认字体不是graphfont
