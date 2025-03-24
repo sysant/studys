@@ -1,6 +1,6 @@
 # -*- coding=utf-8
 # 从腾讯COS拉取文件url
-# by yuehui.wang 2023.9.21
+# by san 2023.9.21
 # eg. python3 wings-ww-refresh-cdn-only_small_file_v1.py 17  1.17.10
 
 # install python3.6+
